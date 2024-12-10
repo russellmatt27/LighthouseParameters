@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "mspOfferName": {
+            "value": "ManagementOfferName"
+        },
+        "mspOfferDescription": {
+            "value": "ManagementOfferDescription"
+        },
+        "managedByTenantId": {
+            "value": "EntraIDTenant_value"
+        },
+        "authorizations": {
+            "value": [
+                { 
+                    "principalId": "EntraGroupID", 
+                    "roleDefinitionId": "EntraIDRoleID",
+                    "principalIdDisplayName": "EntraIDGroupName" 
+                }, 
+                { 
+                    "principalId": "EntraGroupID", 
+                    "roleDefinitionId": "EntraIDRoleID",
+                    "principalIdDisplayName": "EntraIDGroupName"
+                    
+                }
+                    ]
+                }                
+        }
+}
